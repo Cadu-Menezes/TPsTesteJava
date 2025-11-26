@@ -1,38 +1,24 @@
 package br.com.cadu;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import net.jqwik.api.*;
+import org.junit.jupiter.api.Assertions;
+
 
 /**
- * Unit test for simple App.
+ * Testes para a classe App utilizando jqwik para testes baseados em propriedades
  */
-public class AppTest 
-    extends TestCase
-{
+public class AppTest {
+    
+    private App app = new App();
+    
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * Teste baseado em propriedades: A soma deve ser comutativa
+     * Propriedade: a + b == b + a para qualquer valor de a e b
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Property
+    void somaComutativa(@ForAll int a, @ForAll int b) {
+        Assertions.assertEquals(app.somar(a, b), app.somar(b, a));
     }
+    
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
