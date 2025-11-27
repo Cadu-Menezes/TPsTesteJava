@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: br.com.cadu.AppTest
+Test set: br.com.cadu.MathFunctionsTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in br.com.cadu.AppTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in br.com.cadu.MathFunctionsTest

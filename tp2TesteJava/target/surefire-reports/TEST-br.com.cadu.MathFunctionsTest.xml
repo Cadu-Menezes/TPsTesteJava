@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.cadu.AppTest" time="0.166" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.cadu.MathFunctionsTest" time="0.115" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,8 +56,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="somaComutativa" classname="br.com.cadu.AppTest" time="0.158">
-    <system-out><![CDATA[timestamp = 2025-11-27T17:08:33.854242200, AppTest:somaComutativa = 
+  <testcase name="dobroDeZeroEZero" classname="br.com.cadu.MathFunctionsTest" time="0.021"/>
+  <testcase name="propriedadeComutativaDobles" classname="br.com.cadu.MathFunctionsTest" time="0.024">
+    <system-out><![CDATA[timestamp = 2025-11-27T17:08:33.883336100, MathFunctionsTest:propriedadeComutativaDobles = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -66,10 +67,61 @@ after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
 when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 81         | # of all combined edge cases
-edge-cases#tried = 71         | # of edge cases tried in current run
-seed = 4374798640600039031    | random seed to reproduce generated values
+edge-cases#tried = 64         | # of edge cases tried in current run
+seed = -7869979959545695041   | random seed to reproduce generated values
 
 
 ]]></system-out>
+  </testcase>
+  <testcase name="seXForParEntaoDobroTambemEPar" classname="br.com.cadu.MathFunctionsTest" time="0.024">
+    <system-out><![CDATA[timestamp = 2025-11-27T17:08:33.908343100, MathFunctionsTest:seXForParEntaoDobroTambemEPar = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 524                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 9          | # of all combined edge cases
+edge-cases#tried = 9          | # of edge cases tried in current run
+seed = -3128296062143319581   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="dobroSempreEDivisiblePorDois" classname="br.com.cadu.MathFunctionsTest" time="0.011">
+    <system-out><![CDATA[timestamp = 2025-11-27T17:08:33.918344200, MathFunctionsTest:dobroSempreEDivisiblePorDois = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 9          | # of all combined edge cases
+edge-cases#tried = 9          | # of edge cases tried in current run
+seed = 5552129588431636805    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="dobroSempreEMaiorOuIgual" classname="br.com.cadu.MathFunctionsTest" time="0.055">
+    <system-out><![CDATA[timestamp = 2025-11-27T17:08:33.973355500, MathFunctionsTest:dobroSempreEMaiorOuIgual = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 830                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 9          | # of all combined edge cases
+edge-cases#tried = 9          | # of edge cases tried in current run
+seed = -6210027723503397727   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[nov. 27, 2025 5:08:33 PM net.jqwik.engine.execution.AfterFailureParametersGenerator logAfterFailureHandling
+INFO: After Failure Handling: SAMPLE_FIRST, Previous Generation: <GenerationInfo(-6210027723503397727, 3, [size=282])>
+]]></system-err>
   </testcase>
 </testsuite>
